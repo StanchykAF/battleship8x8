@@ -57,7 +57,7 @@ Consider rows be marked with digits and columns be marked with letters:
 ```
 Consider the following list of shots:
 ```java
-List<> shots = List.of("A1", "B2, "C3", "D4");
+List<> shots = List.of("A1", "B2", "C3", "D4");
 ```
 Then we could use `Battleship8x8` API:
 ```java
