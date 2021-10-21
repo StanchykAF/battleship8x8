@@ -1,9 +1,14 @@
 # Battleship 8x8
 
-Implement methods in [Battleship8x8](src/main/java/com/epam/rd/autotasks/Battleship8x8.java) class.
+The purpose of this exercise is to train you to work with wrapper classes and their static methods.
 
-Battleship8x8 represents a 8x8 map for [Battleship game](https://en.wikipedia.org/wiki/Battleship_(game)). An important
-detail is that Battleship8x8 uses a `ships` field of long type to store ships locations 
+Estimated workload of this exercise is _3 hours_.
+
+### Description
+Please, implement methods in [Battleship8x8](src/main/java/com/epam/rd/autotasks/Battleship8x8.java) class.
+
+Battleship8x8 represents a 8x8 map for [Battleship game](https://en.wikipedia.org/wiki/Battleship_(game)).
+An important detail is that Battleship8x8 uses a `ships` field of long type to store ships locations 
 and a `shots` field of long type to register shots.
 
 Fields of long type value store 64 bits each. Consider them as 8 rows per 8 cells.
@@ -21,7 +26,7 @@ Map string is 8 lines per 8 characters separated by "\n". Use following symbols:
 You must not add or change new fields.
 Consider using static methods of wrapper classes.
 
-## Example
+### Example
 Consider a map information encoded as a long value: 
 ```java
 long map = -1150950973573693440L;
