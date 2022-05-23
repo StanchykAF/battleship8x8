@@ -9,7 +9,6 @@ public class Battleship8x8 {
     }
 
     public boolean shoot(String shot) {
-//        throw new UnsupportedOperationException();
         long newShot = 0b10000000_00000000_00000000_00000000_00000000_00000000_00000000_00000000L;
         switch (shot.charAt(0)) {
             case 'A': break;
@@ -22,7 +21,6 @@ public class Battleship8x8 {
             case 'H': {newShot >>>= 7; break;}
         }
         newShot >>>= (8 * (shot.charAt(1) - 1));
-//        System.out.println(newShot + "\n" + 0b00000000_00000100_00000000_00000000_00000000_00000000_00000000_00000000L);
         shots |= newShot;
         if (ships == (ships | newShot)) {
             return true;
@@ -31,7 +29,6 @@ public class Battleship8x8 {
     }
 
     public String state() {
-//        throw new UnsupportedOperationException();
 //        ships & shots  - 0 & 0  - . пустая ячейка
 //        ships & shots  - 0 & 1  - × пустая стреляная ячейка
 //        ships & shots  - 1 & 0  - ☐ живой корабль
@@ -67,10 +64,4 @@ public class Battleship8x8 {
         return result.toString();
     }
 
-//    public static void main(String[] args) {
-//        Battleship8x8 battle = new Battleship8x8(0b11110000_00000111_00000000_00110000_00000010_01000000_00000000_00000000L);
-////        battle.shoot("B2");
-//        System.out.println(battle.shoot("F2"));
-//        System.out.println(battle.state());
-//    }
 }
